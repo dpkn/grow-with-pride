@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jasonwebb/2d-space-colonization-experiments.git"
+    "url": "git+https://github.com/dpkn/grow-with-pride.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jasonwebb/2d-space-colonization-experiments/issues"
+    "url": "https://github.com/dpkn/grow-with-pride/issues"
   },
-  "homepage": "https://github.com/jasonwebb/2d-space-colonization-experiments#readme",
+  "homepage": "https://github.com/dpkn/grow-with-pride#readme",
   "devDependencies": {
     "file-saver": "^2.0.2",
     "kdbush": "^3.0.0",
