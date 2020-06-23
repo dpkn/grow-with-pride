@@ -1,0 +1,34 @@
+ body{
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      background-color:rgb(50,50,50)
+    }
+    /* #sketch{
+      background:url(placeholder.png);
+        background-repeat: no-repeat;
+    background-size: 100% 100%;
+    } */
+    .rainbow {
+      width:1920px;
+      height:1080px;
+      top:0;
+      left:0;
+      position: absolute;
+      /* background: repeating-radial-gradient(red,orange,yellow,green,blue,indigo,violet); ;
+       */
+      background:linear-gradient(180deg, rgba(254,0,0,1) 0%, rgba(254,0,0,1) 15%, rgba(253,140,0,1) 17%, rgba(253,140,0,1) 32%, rgba(255,229,0,1) 34%, rgba(255,229,0,1) 49%, rgba(17,159,11,1) 51%, rgba(17,159,11,1) 66%, rgba(6,68,179,1) 68%, rgba(6,68,179,1) 83%, rgba(194,46,220,1) 85%, rgba(194,46,220,1) 100%); 
+      mix-blend-mode: darken;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: oscill 2s ease-in-out infinite alternate;
+      transform: rotate3d(30);
+
+    }
+    @keyframes oscill {
+      100% {
+      transform: rotate(0deg);
+      }
+    }
