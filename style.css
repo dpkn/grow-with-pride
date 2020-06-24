@@ -32,3 +32,15 @@
       transform: rotate(0deg);
       }
     }
+
+    video{
+      display: none;
+    }
+
+    .overlay{
+      position: absolute;
+      top:0;
+      left:0;
+      opacity: 0.5;
+      mix-blend-mode: lighten;
+    }

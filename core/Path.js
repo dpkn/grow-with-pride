@@ -116,10 +116,12 @@ export default class Path {
   }
 
   draw() {
+//console.log(this.type, this.settings.ShowObstacles);
     if(
       this.settings.ShowBounds && this.type == 'Bounds' ||
-      this.settings.ShowObstacles && this.type == 'Obstacles'
+      this.settings.ShowObstacles && this.type == 'Obstacle'
     ) {
+      
       this.ctx.beginPath();
       this.ctx.moveTo(this.transformedPolygon[0][0], this.transformedPolygon[0][1]);
 
@@ -129,7 +131,7 @@ export default class Path {
       }
 
       // Draw line back to first point to close the polygon
-      // this.ctx.lineTo(this.transformedPolygon[0][0], this.transformedPolygon[0][1]);
+      this.ctx.lineTo(this.transformedPolygon[0][0], this.transformedPolygon[0][1]);
 
       switch(this.type) {
         case 'Bounds':
@@ -143,11 +145,14 @@ export default class Path {
           break;
 
         case 'Obstacle':
-          this.ctx.fillStyle = this.settings.Colors.ObstacleFillColor;
+           this.ctx.strokeStyle = this.settings.Colors.BoundsBorderColor;
+           this.ctx.lineWidth = this.settings.BoundsBorderThickness;
+           this.ctx.stroke();
+           this.ctx.lineWidth = 1;
           break;
       }
 
-      this.ctx.fill();
+      // this.ctx.fill();
 
       // Draw bounding box
       // this.ctx.beginPath();

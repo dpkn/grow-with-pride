@@ -22,11 +22,11 @@ export default {
   // Visibility toggles
   ShowAttractors: false,       // toggled with 'a'
   ShowNodes: true,             // toggled with 'n'
-  ShowTips: false,             // toggled with 't'
-  ShowAttractionZones: false,  // toggled with 'z'
+  ShowTips:true,             // toggled with 't'
+  ShowAttractionZones:false,  // toggled with 'z'
   ShowKillZones: false,        // toggled with 'k'
-  ShowInfluenceLines: false,   // toggled with 'i'
-  ShowBounds:false,           // toggled with 'b'
+  ShowInfluenceLines:false,   // toggled with 'i'
+  ShowBounds:true,           // toggled with 'b'
   ShowObstacles: true,        // toggled with 'o'
 
   // Modes
@@ -38,5 +38,5 @@ export default {
   // Line thicknesses
   BranchThickness: 1,
   TipThickness: 1,
-  BoundsBorderThickness: 10
+  BoundsBorderThickness: 3
 }

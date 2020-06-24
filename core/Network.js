@@ -185,6 +185,7 @@ export default class Network {
     if(this.settings.ShowObstacles && this.obstacles != undefined) {
       for(let obstacle of this.obstacles) {
         obstacle.draw();
+      
       }
     }
   }
@@ -346,7 +347,7 @@ export default class Network {
 
   reset() {
     this.nodes = [];
-  // this.attractors = [];
+    this.attractors = [];
 
     this.buildSpatialIndices();
   }
@@ -367,7 +368,7 @@ export default class Network {
     }
   }
 
-  toggleattractors() {
+  toggleAttractors() {
     this.settings.Showattractors = !this.settings.Showattractors;
 
     for(let attractor of this.attractors) {
